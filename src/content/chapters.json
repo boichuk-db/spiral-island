@@ -1,0 +1,30 @@
+[
+    {
+        "id": "storm",
+        "chapterNumber": 1,
+        "slug": "storm",
+        "title": "Глава 1 — Шторм",
+        "shortTitle": "Шторм",
+        "description": "Початок подорожі і буря, що змінює все",
+        "content": "Тут буде текст першої глави...",
+        "image": "/images/chapters/chapter-1.jpg",
+        "status": "published",
+        "readingTime": 6,
+        "createdAt": "2025-08-22",
+        "updatedAt": "2025-08-22"
+    },
+    {
+        "id": "shore",
+        "chapterNumber": 2,
+        "slug": "shore",
+        "title": "Глава 2 — Берег",
+        "shortTitle": "Берег",
+        "description": "Висадка і перші години на острові",
+        "content": "Тут буде текст другої глави...",
+        "image": "/images/chapters/chapter-2.jpg",
+        "status": "published",
+        "readingTime": 8,
+        "createdAt": "2025-08-22",
+        "updatedAt": "2025-08-22"
+    }
+]
