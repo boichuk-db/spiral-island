@@ -14,6 +14,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Spiral Island',
   description: 'Interactive Reader',
+  icons: {
+    icon: '/spiral-logo.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,18 +32,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="flex min-h-screen flex-col">
             {/* Header */}
             <header className="sticky top-0 z-50 border-b bg-stone-100/90 backdrop-blur dark:bg-stone-800/90">
-              <div className="container mx-auto flex items-center justify-between py-4">
+              <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
                 <Link href="/" className="text-2xl font-bold transition hover:opacity-80">
                   Spiral Island
                 </Link>
                 <NavBar />
               </div>
             </header>
-            {/* Main content */}
-            <main className="container mx-auto flex-1 py-8">{children}</main>
-            {/* Footer */}
+
+            <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
+
             <footer className="border-t bg-stone-100 dark:bg-stone-800">
-              <div className="container mx-auto py-4 text-center text-sm text-stone-500 dark:text-stone-400">
+              <div className="mx-auto w-full max-w-6xl px-4 py-4 text-center text-sm text-stone-500 dark:text-stone-400">
                 © {new Date().getFullYear()} Spiral Island
               </div>
             </footer>

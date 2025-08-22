@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import chapters from '@/content/chapters.json'
 
 export default function HomePage() {
   const [lastChapter, setLastChapter] = useState<string | null>(null)
@@ -14,6 +15,8 @@ export default function HomePage() {
       setLastChapter(saved)
     }
   }, [])
+
+  const lastCh = chapters.find((ch) => ch.slug === lastChapter)
 
   return (
     <div className="flex flex-col items-center gap-8 py-16">
@@ -31,10 +34,11 @@ export default function HomePage() {
             </Button>
           </Link>
 
-          {lastChapter ? (
-            <Link href={`/chapters/${lastChapter}`}>
+          {lastCh ? (
+            <Link href={`/chapters/${lastCh.slug}`}>
               <Button size="lg" variant="secondary" className="w-full">
-                Continue
+                Continue:{' '}
+                {lastCh.title.length > 40 ? lastCh.title.slice(0, 40) + '…' : lastCh.title}
               </Button>
             </Link>
           ) : (
