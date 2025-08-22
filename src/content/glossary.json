@@ -1,0 +1,41 @@
+[
+    {
+        "category": "Geography",
+        "terms": [
+            {
+                "term": "Caldera",
+                "definition": "A volcanic crater formed after a major eruption."
+            },
+            {
+                "term": "Luminescent Bay",
+                "definition": "A bay with glowing water caused by bioluminescent organisms."
+            }
+        ]
+    },
+    {
+        "category": "Flora & Fauna",
+        "terms": [
+            {
+                "term": "Mammoth (Dwarf)",
+                "definition": "A small-sized mammoth species surviving on the island."
+            },
+            {
+                "term": "Spiral Fern",
+                "definition": "A native plant with spiral-shaped leaves, considered symbolic."
+            }
+        ]
+    },
+    {
+        "category": "Culture",
+        "terms": [
+            {
+                "term": "Spiral Symbol",
+                "definition": "A recurring motif in local rituals and markings."
+            },
+            {
+                "term": "Silent Speech",
+                "definition": "A system of hand gestures and bird-like calls for communication."
+            }
+        ]
+    }
+]

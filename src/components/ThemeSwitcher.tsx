@@ -9,7 +9,6 @@ export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Щоб уникнути гідраційних багів
   useEffect(() => setMounted(true), [])
 
   if (!mounted) return null

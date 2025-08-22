@@ -12,6 +12,7 @@ const links = [
   { href: '/chapters', label: 'Chapters' },
   { href: '/map', label: 'Map' },
   { href: '/glossary', label: 'Glossary' },
+  { href: '/characters', label: 'Characters' },
 ]
 
 export function NavBar() {
@@ -20,7 +21,7 @@ export function NavBar() {
   return (
     <nav className="relative flex items-center justify-between py-4">
       {/* Desktop links */}
-      <div className="hidden items-center gap-6 md:flex">
+      <div className="mr-4 hidden items-center gap-6 md:flex">
         {links.map(({ href, label }) => (
           <Link
             key={href}
@@ -41,21 +42,23 @@ export function NavBar() {
       <ThemeSwitcher />
 
       {/* Mobile menu */}
-      <Sheet>
-        <SheetTrigger>
-          <Menu size={22} />
-        </SheetTrigger>
-        <SheetContent side="right">
-          <SheetTitle>Spiral Island</SheetTitle>
-          <div className="mt-4 flex flex-col gap-4">
-            {links.map(({ href, label }) => (
-              <Link key={href} href={href}>
-                {label}
-              </Link>
-            ))}
-          </div>
-        </SheetContent>
-      </Sheet>
+      <div className="ml-2 flex items-center md:hidden">
+        <Sheet>
+          <SheetTrigger>
+            <Menu size={22} />
+          </SheetTrigger>
+          <SheetContent side="right">
+            <SheetTitle>Spiral Island</SheetTitle>
+            <div className="mt-4 flex flex-col gap-4">
+              {links.map(({ href, label }) => (
+                <Link key={href} href={href}>
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
     </nav>
   )
 }

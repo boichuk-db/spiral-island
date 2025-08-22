@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "slug": "lorio",
+        "name": "Лоріо",
+        "role": "Дослідник",
+        "bio": "Автор польових нотаток про острови та їх аномалії.",
+        "avatar": "/images/characters/lorio.jpg",
+        "tags": [
+            "дослідник",
+            "оповідач"
+        ],
+        "firstAppearanceChapter": 1
+    },
+    {
+        "id": 2,
+        "slug": "naira",
+        "name": "Наїра",
+        "role": "Провідниця",
+        "bio": "Знає «тиху мову», веде групи крізь небезпечні біоми.",
+        "avatar": "/images/characters/naira.jpg",
+        "tags": [
+            "провідник",
+            "культура"
+        ],
+        "firstAppearanceChapter": 2
+    }
+]
